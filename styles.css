@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+  background-image: url('game-machine-neon-lights-578bbd3939160ebec6070aeb1b754eb7.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: "Press Start 2P";
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 4px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+
+.cell:hover {
+  border-color: #ff4992;
+}
+
+.blue {
+  color: 	#00efff;
+}
+.pink {
+  color: #ff4992;
+}
+
+
+button {
+  font-family: "Press Start 2P";
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 1rem 1rem 0;
+}
+
+#resetButton {
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
