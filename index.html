@@ -9,8 +9,8 @@
 
   <body>
     <div class="header">
-      <h1>Tic Tac Toe</h1>
-      <span class="turn"> X's turn! </span>
+      <h1>Tic-Tac-Toe</h1>
+      <span class="turn"> </span>
     </div>
 
     <div class="board" id="board">
@@ -26,11 +26,21 @@
     </div>
 
     <div class="controls">
-      <button id="prevButton" >&laquo; Prev</button>
-      <button id="resetButton">&#x21bb;</button>
-      <button id="nextButton">Next &raquo;</button>
+      <div class="top-containers">
+        <button id="prevButton" disabled>&laquo; Prev </button>
+        <button id="resetButton">&#x21bb;</button>
+        <button id="nextButton" disabled> Next &raquo;</button>
+      </div>
+
+      <button class="history" disabled>History</button>
+      <div class="modal-container">
+        <div class="modal">
+          <h1>Move Log</h1>
+          <ul id="moveLogList"></ul>
+          <button id="close">Close</button>
+        </div>
+      </div>
     </div>
   </body>
-
   <script src="moves2.js"></script>
 </html>
